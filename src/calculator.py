@@ -17,7 +17,7 @@ def read_number(prompt: str) -> float:
         try:
             return float(input(prompt).strip())
         except ValueError:
-            print('Please enter a valid number.')
+            print("That doesn't look like a number. Did your cat walk on the keyboard?")
 
 
 def main() -> None:

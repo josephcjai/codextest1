@@ -53,7 +53,7 @@ class TestReadNumber(unittest.TestCase):
                 value = self.read_number('Enter number: ')
                 output = fake_out.getvalue()
         self.assertEqual(value, 5.0)
-        self.assertIn('Please enter a valid number.', output)
+        self.assertIn("That doesn't look like a number. Did your cat walk on the keyboard?", output)
 
 
 class TestMainFlow(unittest.TestCase):
