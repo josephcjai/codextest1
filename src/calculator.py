@@ -7,7 +7,7 @@ def calculate(a: float, op: str, b: float) -> float:
         return a * b
     if op == '/':
         if b == 0:
-            raise ZeroDivisionError('Cannot divide by zero')
+            raise ZeroDivisionError("Nice try! Dividing by zero summons math dragons.")
         return a / b
     raise ValueError('Unsupported operation')
 
